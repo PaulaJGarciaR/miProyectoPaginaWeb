@@ -4,10 +4,6 @@
 }
 body{
     background-color: rgb(255, 255, 255);
-    font-family:fantasy;
-}
-body{
-    background-color: rgb(255, 255, 255);
     font-family:'fantasy';
 }
 header::before{
@@ -51,7 +47,7 @@ nav{
     border-radius: 10px;
     font-weight: 700;
 }
-.nav .enlaces-menu a.active, a:hover{
+.nav .enlaces-menu a.active, a.active:hover{
     color: white;
     background-color: rgb(116, 171, 255);
 }
@@ -92,4 +88,106 @@ nav{
       75%{margin-left: -300%;}
       100%{margin-left: -300%;}
   }
+
+  .productos{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background-color: aliceblue;
+    margin-bottom: 50px;
+  }
   
+  .card{
+    margin:20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgb(170, 170, 170);
+    overflow:hidden;
+}
+  .contenido{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(126, 249, 157);
+    opacity: 0;
+    transition: .5s;
+  }
+  .contenido h2,a{
+    color:rgb(0, 0, 0);
+    margin:10px 0;
+  }
+  .productos a:hover{
+   color: rgb(9, 112, 104);
+  }
+  .card:hover .contenido{
+    opacity: 1;
+  }
+  .title {
+   padding-top: 30px;
+    display: block;
+    width: 100%;
+    text-align: center;
+   font-size: 30px;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(16, 42, 65);
+}
+.pie-pagina .grupoUno{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupoUno .box figure{
+width: 100%;
+height: 100%;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.pie-pagina .grupoUno .box figure img{
+  width: 250px;
+}
+.pie-pagina .grupoUno .box h2{
+    color:white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupoUno .box p{
+    color:white;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupoUno .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupoUno .red-social a:hover{
+color: aqua;
+}
+.pie-pagina .grupoDos{
+    background-color: rgb(10, 28, 44);
+    padding: 15px 10px;
+    text-align: center;
+    color:white;
+}
+
+
