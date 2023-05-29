@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../Css/Registro_Styles.css">
+</head>
+<body>
+    <main>
+
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input onblur="validar()" id="cajaTextoUsuario" type="text" placeholder="Usuario">
+                    <h5 id="alerta"></h5>
+                    <input type="password" onblur="validar()" id="cajaTextoContraseña" placeholder="Contraseña">
+                    <h5 id="alertaContraseña"></h5>
+                    <div class="contenedorBoton"><button id="boton">Entrar</button></div>
+                    <a href="../index.html"><h5>Regresar al inicio</h5></a>
+                </form>
+
+                <!--Register-->
+                <form action="" class="formulario__register">
+                    <h2>Regístrarse</h2>
+                    <input type="text" placeholder="Nombre completo">
+                    <input onblur="validar()" id="cajaTextoEmail" type="text" placeholder="Correo Electronico">
+                    <h5 id="alertaEmailRegistro"></h5>
+                    <input onblur="validar()" id="cajaTextoUsuarioRegistro" type="text" placeholder="Usuario">
+                    <h5 id="alertaUsuarioRegistro"></h5>
+                    <input onblur="validar()" id="cajaTextoContraseñaRegistro" type="password" placeholder="Contraseña">
+                    <h5 id="alertaContraseñaRegistro"></h5>
+                    <div class="contenedorBoton"><button>Regístrarse</button></div>
+                    <a href="../index.html"><h5>Regresar al inicio</h5></a>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <script src="../Js/Registro_js.js"></script>
+</body>
+</html>
